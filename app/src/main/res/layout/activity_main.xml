@@ -26,16 +26,16 @@
         <EditText
             android:id="@+id/mail_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:hint="Email"
             android:background="#ffff"/>
         <Button
             android:id="@+id/Con_button"
             android:layout_below="@+id/mail_id"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:text="Continue"
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:width="250dp"
             android:backgroundTint="#63ebc9"
@@ -67,7 +67,7 @@
             <Button
                 android:id="@+id/Fb_image"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Continue with Facebook"
                 android:textColor="#000000"
                 android:backgroundTint="#ffff"
@@ -90,7 +90,7 @@
             <Button
                 android:id="@+id/bt_google"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Continue with Google"
                 android:textColor="#000000"
                 android:backgroundTint="#ffff"
@@ -106,7 +106,7 @@
             android:layout_centerHorizontal="true">
 
             <ImageView
-                android:layout_width="50dp"
+                android:layout_width="55dp"
                 android:layout_height="50dp"
                 android:src="@drawable/apple"
                 android:id="@+id/img_apple"/>
@@ -114,7 +114,7 @@
             <Button
                 android:id="@+id/Fb_google"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Continue with Apple"
                 android:textColor="#000000"
                 android:backgroundTint="#ffff"
