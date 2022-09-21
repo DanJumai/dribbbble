@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whity"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Hi_hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:text="Hi!"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/lay_gen"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <EditText
+            android:id="@+id/mail_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="#ffff"/>
+        <Button
+            android:id="@+id/Con_button"
+            android:layout_below="@+id/mail_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Continue"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:width="250dp"
+            android:backgroundTint="#63ebc9"
+            />
+        <TextView
+            android:id="@+id/oror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="#1a1c1c"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/Con_button"
+            android:layout_centerInParent="true"/>
+        <RelativeLayout
+            android:id="@+id/lay_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oror"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook"
+                android:id="@+id/img_fb"/>
+
+            <Button
+                android:id="@+id/Fb_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Facebook"
+                android:textColor="#000000"
+                android:backgroundTint="#ffff"
+                android:layout_toRightOf="@id/img_fb"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_fb"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google"
+                android:id="@+id/img_google"/>
+
+            <Button
+                android:id="@+id/bt_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google"
+                android:textColor="#000000"
+                android:backgroundTint="#ffff"
+                android:layout_toRightOf="@id/img_google"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_google"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/apple"
+                android:id="@+id/img_apple"/>
+
+            <Button
+                android:id="@+id/Fb_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Apple"
+                android:textColor="#000000"
+                android:backgroundTint="#ffff"
+                android:layout_toRightOf="@id/img_apple"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
